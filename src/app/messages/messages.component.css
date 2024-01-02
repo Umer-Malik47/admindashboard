@@ -1,0 +1,86 @@
+
+ input{
+    padding: 5px;
+    width: 250px;
+    border: 1px solid #6725f7;
+    margin-right: 0px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .scroll{
+    height: 500px;
+    overflow-y: scroll;
+    margin: 10px 0;
+  }
+  .msgnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .msgnav h1 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .msgnav button {
+    background-color: #6725f7;
+    color: #fff;
+    padding: 9px 12px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  .message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.29);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .msgimg {
+    margin-right: 15px;
+  }
+  .msgimg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    object-fit: contain;
+  }
+  .msgcontent {
+    flex: 1;
+    
+  }
+  .msgcontent b {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .msgcontent p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .msgcontent p:last-child {
+    color: #888;
+  }
+  .msgnav button:hover {
+    background-color: #5520c8;
+  }
+  .messagesbox {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  @media (max-width:730px){
+    .msgnav h1{
+        font-size: 18px;
+      }
+      .msgnav button{
+        font-size: 14px;
+    
+      }
+  }

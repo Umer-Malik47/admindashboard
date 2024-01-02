@@ -1,0 +1,18 @@
+<div class="msgnav">
+    <h1>Recent clients messages</h1>
+    <button>+New message</button>
+</div>
+<input type="text" placeholder="Search message by name" [(ngModel)]="messagequery" (keyup)="filtermessage()">
+<div class="scroll">
+
+<div class="message" *ngFor="let item of filteredarr">
+    <div class="msgimg">
+        <img src="{{item.img}}" alt="">
+    </div>
+    <div class="msgcontent">
+        <b>{{item.name | titlecase}}</b>
+        <p>{{item.content}}</p>
+        <p>{{item.time}}</p>
+    </div>
+</div>
+</div>

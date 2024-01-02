@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="sidenav" [ngClass]="{'display ': showSideNav}">
+        <i class="fa-solid fa-bars-staggered menu" (click)="toggleSideNav()"></i>
+        <h1 [ngClass]="{'adnametog': showSideNav}">Admin</h1>
+        <div class="links">
+            <div class="profile">
+                <img src="assets/admin-img.jpg" alt="">
+                <div class="adminname" [ngClass]="{'adnametog': showSideNav}">
+                    <span>Hi,Umer</span>
+                    <p>umer@gmail.com</p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#"><span
+                            [ngClass]="{'linktog': showSideNav}"> <div class="generaterep displayside">
+                                <button [ngClass]="{'display': false}">New Project + </button>
+                            </div></span></a></li>
+                <li><a href="#"> <i class="fa-brands fa-hive"></i> <span
+                            [ngClass]="{'linktog': showSideNav}">Dashboard</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-circle-info"></i> <span
+                            [ngClass]="{'linktog': showSideNav}">Apps</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-chart-simple"></i> <span
+                            [ngClass]="{'linktog': showSideNav}">Charts</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-heart"></i> <span
+                            [ngClass]="{'linktog': showSideNav}">Plugins</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-globe"></i> <span
+                            [ngClass]="{'linktog': showSideNav}">Widget</span></a></li>
+                <li><a href="#"> <i class="fa-solid fa-arrow-right-from-bracket"></i> <span
+                            [ngClass]="{'linktog': showSideNav}">Logout</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="headnav">
+        <div class="rignav"> </div>
+        <div class="lifnav">
+            <input type="text" placeholder="Search here...">
+            <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="icons">
+                <i class="fa-solid fa-gift"></i>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-message"></i>
+            </div>
+            <div class="generaterep">
+                <button [ngClass]="{'display': false}">New Project + </button>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="firstflex">
+            <div class="box1">
+                <h1>73</h1>
+                <i class="fa-solid fa-star"></i>
+                <p>Total project handle</p>
+            </div>
+            <div class="box1">
+                <h1>250</h1>
+                <i class="fa-solid fa-user-large"></i>
+                <p>Total contact you have</p>
+            </div>
+            <div class="box1">
+                <h1>93</h1>
+                <i class="fa-solid fa-list-check"></i>
+                <p>Total ultimate tasks</p>
+            </div>
+            <div class="box1">
+                <h1>12</h1>
+                <i class="fa-solid fa-message"></i>
+                <p>Unread messages</p>
+            </div>
+        </div>
+        <div class="bigchart">
+            <div>
+                <canvasjs-chart [options]="chartOptions" [styles]="{width: '100%', height: '360px'}"></canvasjs-chart>
+            </div>
+        </div>
+        <div class="twosmallcharts">
+            <div class="chart1">
+                <app-newclients></app-newclients>
+            </div>
+            <div class="chart1">
+                <app-projectstypes></app-projectstypes>
+            </div>
+        </div>
+
+        <div class="messagesbox">
+            <app-messages></app-messages>
+    </div>
+
+</div>
+</div>
